@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Link](jade-ganache-ec9998.netlify.app)
+- Live Site URL: [Link](https://jade-ganache-ec9998.netlify.app/)
 
 ## My process
 
