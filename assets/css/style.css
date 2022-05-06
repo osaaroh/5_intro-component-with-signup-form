@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+}
+
+.intro--main,
+.intro--side {
+    padding: 1rem;
+    flex: 1;
+}
+
+.intro--side {
+    max-width: 500px;
+}
+
+.intro--main h1 {
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+
+.intro--side-form form {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    margin-bottom: 10px;
+    border: 1px solid #B3B3B3;
+    /* padding: 0.8rem; */
+    background: white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition-property: border-color;
+    -webkit-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+    -moz-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.intro--side-form form input {
+    width: 100%;
+    border-width: 0;
+    padding: 0.6rem;
+    padding-left: 1.8rem;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    background: hsl(154, 59%, 51%);
+    padding-left: 0.6rem !important;
+}
+
+.submit:hover,
+.t_c span:hover {
+    cursor: pointer;
+}
+
+.t_c {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.t_c span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+.intro--side-tooltip {
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1.5rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.intro--side-tooltip p span {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1220px) {
+    body {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    body {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 774px) {
+    body {
+        flex-direction: column;
+        text-align: center;
+        background-image: url("../../images/bg-intro-mobile.png");
+    }
+    .intro--main {
+        margin-bottom: 1.5rem;
+    }
+    .intro--main h1 {
+        font-size: 1.8rem;
+        line-height: 120%;
+        margin-bottom: 1rem;
+    }
+    .intro--side-tooltip {
+        padding: 3rem;
+    }
+    p {
+        font-size: 0.95rem;
+    }
+}
